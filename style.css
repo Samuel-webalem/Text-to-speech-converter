@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, rgb(95, 164, 106), rgb(118, 186, 170));
+  min-height: 100vh;
+}
+.container {
+  background-color: rgb(239, 244, 248);
+  border-radius: 7px;
+  padding: 30px 25px 40px;
+  text-align: center;
+}
+.container:where(textarea,  select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.text_input {
+  height: 270px;
+  resize: none;
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 105%;
+}
+.choice {
+  text-align: left;
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.option:where(input, .selectmenu) {
+  height: 50px;
+  padding: 0 15px;
+  border: 1px solid #bfbfbf;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+select{
+  padding: 0.6em 3em;
+  margin-top: 5px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 3px;
+  background: none;
+}
+.save{
+  color: #fff;
+  margin-top: 20px;
+  height: 3.5em;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background: #17A2BB;
+  border-radius: 2px;
+}
